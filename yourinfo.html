@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report Missing Person - Sagini System</title>
+  <link rel="stylesheet" href="sagini.css">
+  <script type="module" src="login.js" defer></script>
+  <script type="module" src="sagini.js" defer></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    #image {
+      width: 400px;
+      height: auto;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar__item {
+  float: left;
+}
+.navbar__link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar__link:hover {
+  background-color: #111;
+}
+#image {
+  width: 400px;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.form-section {
+  display: none;
+}
+.form-section.active {
+  display: block;
+}
+.next-button {
+  background-color: rgba(252, 212, 0, 0.9);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.next-button svg {
+  margin-left: 8px;
+}
+.content {
+  padding-top: 100px; /* Adjust this value based on the height of your navbar */
+}
+</style>
+  </style>
+</head>
+<body>
+  <!-- Add common header and navigation -->
+  <div class="header">  
+    <div class="header__logo">
+      <img src="images/Sagini logo.jpg" alt="Sagini Logo" class="headlogo-img">
+      <strong> SAGINI SYSTEM</strong>
+    </div>
+  </div>
+
+
+  <section id="form-section">
+    <form action="" id="reportForm">
+      <div id="missingPersonInfo" class="form-section active">
+        <div class="alert">Report Received</div>
+        <h2>Report Missing Person</h2>
+    <strong><h3>Your Info</h3></strong>
+    <label for="your-last-name">Last Name:</label>
+    <input type="text" id="your-last-name" required>
+  
+    <label for="your-first-name">First Name:</label>
+    <input type="text" id="your-first-name" required>
+  
+    <label for="relationship">Your Relationship with the missing person:</label>
+    <textarea id="relationship" rows="4"></textarea>
+  
+    <label for="country-of-residence">Country of Residence:</label>
+    <input type="text" id="country-of-residence">
+  
+    <label for="place-of-residence">Place of Residence:</label>
+    <input type="text" id="place-of-residence">
+  
+    <label for="your-last-known-location">Last Known Location:</label>
+    <input type="text" id="your-last-known-location" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+  
+    <button type="submit">Submit Report</button>
+  </form>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="./sagini.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
