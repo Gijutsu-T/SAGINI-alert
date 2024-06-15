@@ -32,7 +32,7 @@
             // Signed up 
             const user = userCredential.user;
             alert('Logging In!');
-            window.location.href = 'index.html';
+            window.location.href = 'person.html';
             document.getElementById('login-form').reset();
             // ...
           })
@@ -52,7 +52,7 @@
           const user = result.user;
           console.log(user);
           alert('Google Sign-In Successful!');
-          window.location.href = 'index.html';
+          window.location.href = 'person.html';
           document.getElementById('login-form').reset();
         })
         .catch((error) => {
